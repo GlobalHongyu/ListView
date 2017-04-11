@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>小区户型</title>
+		<link rel="shortcut icon" href="../static/img/index/OTO18.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../static/css/info.css">
+        <script type="text/javascript" src="../static/js/jquery-1.7.2.js"></script>
+		 <script type="text/javascript" src="../static/js/rem.js"></script>
+	</head>
+	<body>
+		 <div class="info_box">
+		 	<header class="info_head">
+		 		<p ><img src="../static/img/info/fanhui.png" /></p>
+		 		<div class="info_active">户型</div>
+		 		<div>小区</div>
+		 	</header>
+		 	
+		 	<div class="cellList-fail">“对不起没有找到您想要的数据”</div>
+
+		 	<div class="change_box" data-bind='row' >
+		 	
+		 	<div class="bigImg_imgbox">
+		    <div id="bigImg" data-for="zoneCarouselFigure">
+		 		<img src="../static/img/info/quarters.png"/>
+		 		<img src="../static/img/info/quarters.png"/>
+		 	</div>
+		 	</div>
+		 	<div class="info_name">
+		 		<div>
+		 			<p data-bind="zoneName"></p>
+		 			<div class="img_index">
+		 		     <span class="img_index_now">1</span><span class="img_index_all">/1</span>
+		 	        </div> 
+		 		</div>
+		 		<div class="info_details">
+		 			<div><p>均价</p><span data-bind="zoneAveragePrice"></span></div>
+		 			<div><p>开盘时间：</p><span data-bind="zoneOpenTime"></span></div>
+		 			<div><p>开盘地点：</p><span data-bind="zoneAddress"></span></div>
+		 			<div></div>
+		 			<div class="info_details_style" data-for="zoneTags">
+		 				<div></div>
+		 				
+		 			</div>
+		 			<div class="info_details_content">
+		 				 <div><p>入住时间：</p><span data-bind="zoneCheck"></span></div>
+		 				 <div><p>物业类型：</p><span data-bind="zonePropertyType"></span></div>
+		 				 <div><p>建筑类别：</p><span data-bind="zoneArchitecture"></span></div>
+		 				 <div><p>装修状况：</p><span data-bind="zoneDecoration"></span></div>
+		 				 <div><p>住&nbsp;&nbsp;户&nbsp;&nbsp;数：</p><span data-bind="zoneHouses"></span></div>
+		 				 <div><p>容&nbsp;&nbsp;积&nbsp;&nbsp;率：</p><span data-bind="zoneVolume"></span></div>
+		 				 <div><p>绿&nbsp;&nbsp;化&nbsp;&nbsp;率：</p><span data-bind="zoneGreen"></span></div>
+		 				 <div><p>停&nbsp;&nbsp;车&nbsp;&nbsp;位：</p><span data-bind="zoneParking"></span></div>
+		 				 <div><p>产品年限：</p><span data-bind="zonePropertyRight"></span></div>
+		 				 <div><p>开&nbsp;&nbsp;发&nbsp;&nbsp;商：</p><span data-bind="zoneDevelopers"></span></div>
+		 				 <div><p>预售许可证：</p><span data-bind="zonePresell"></span></div>
+		 				 <div><p>物业公司：</p><span data-bind="zonePropertyCompany"></span></div>
+		 				 <div><p>物&nbsp;&nbsp;业&nbsp;&nbsp;费：</p><span data-bind="zonePropertyPrice"></span></div>
+		 			</div>
+		 			
+		 		</div>
+		 	</div>
+            
+		 	</div>
+		 	<div class="recommond_all" >
+			<ul>
+				<li data-bind='row'>
+					<div class="recommond">
+						<div class="recommond_img">
+							<a href="#"> <img src="" data-bind="doorImage"/>
+							</a>
+						</div>
+						<div class="recommond_text">
+							<!--  <p data-bind="doorTag"></p>-->
+							<span data-bind="doorTitle"></span>
+						</div>
+						<input type="hidden" data-bind="doorTag" />
+						<input type="hidden"  data-bind="doorID" value="" />
+					</div>
+					
+				</li>
+				
+
+
+			</ul>
+		    </div>
+		 	<iframe src="../block/footer.html" style="width:100%;"></iframe>
+		 </div>
+		 
+		 <script type="text/javascript" src="../static/js/ListView.js"></script>
+		<script type="text/javascript" src="../static/js/info.js"></script>
+		
+	</body>
+</html>
